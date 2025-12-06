@@ -50,6 +50,7 @@ function resetGame() {
     food = {x: Math.floor(Math.random() * col), y: Math.floor(Math.random() * row)};
     startTime = Date.now();
     score = 0;
+    highScore =localStorage.getItem('highScore') || 0
     scoreEl.textContent = score; 
     highScoreEl.textContent = highScore;
     game();
@@ -113,7 +114,8 @@ function drawSnake() {
         scoreEl.textContent = score;
         if(score > highScore){
             highScore = score
-            highScoreEl.textContent = highScore;
+            localStorage.setItem('highScore', highScore.toString())
+            // highScoreEl.textContent = highScore;
         }
     }
 

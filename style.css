@@ -50,7 +50,7 @@ html,body{
     border: .5px solid rgb(157, 152, 152);
 }
 .snake{
-    background-color: green;
+    background-color: rgb(0, 255, 0);
 }
 .food{
     background-color: red;
