@@ -41,13 +41,60 @@ html,body{
     margin-top: 20px;
     height:515px;
     display: grid;
-    grid-template-columns: repeat(auto-fill,minmax(30px,1fr));
-    grid-template-rows: repeat(auto-fill,minmax(30px,1fr));
+    grid-template-columns: repeat(auto-fill,minmax(20px,1fr));
+    grid-template-rows: repeat(auto-fill,minmax(20px,1fr));
 }
 .block{
-    width: 30px;
-    height: 30px;
-    border: 2px solid rgb(157, 152, 152);
+    width: 20px;
+    height: 20px;
+    border: .5px solid rgb(157, 152, 152);
+}
+.snake{
+    background-color: green;
+}
+.food{
+    background-color: red;
+}
+.model{
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    top:0;
+    background-color: rgba(57, 54, 54, 0.588);
+    backdrop-filter: blur(4px);
+}
+.model-re{
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    top:0;
+    background-color: rgba(57, 54, 54, 0.588);
+    backdrop-filter: blur(4px);
+    display: none;
+
+}
+.model2{
+    position: absolute;
+    width: 400px;
+    height: 200px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background-color: white;
+    padding: 30px;
+    border-radius: 10px;
+    text-align: center;
+}
+button{
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 20px;
+    font-weight: 600;
+    border: none;
+    border-radius: 5px;
+    background-color: rgb(7, 60, 95);
+    color: white;
+    cursor: pointer;
 }
 /* @media screen and (width<= 480px){
 
